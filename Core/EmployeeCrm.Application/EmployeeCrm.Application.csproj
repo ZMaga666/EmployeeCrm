@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.8.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeCrm.Domain\EmployeeCrm.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Exceptions\AttendanceException\" />
+    <Folder Include="Exceptions\PositionException\" />
+    <Folder Include="Exceptions\RegisterBlankException\" />
+    <Folder Include="Exceptions\RoleException\" />
+    <Folder Include="Exceptions\SatisfactionException\" />
+    <Folder Include="Exceptions\StudentException\" />
+    <Folder Include="Exceptions\StudentPaymentException\" />
+    <Folder Include="Exceptions\TaskException\" />
+    <Folder Include="Exceptions\UserException\" />
+    <Folder Include="Validations\TaskValidation\" />
+    <Folder Include="Validations\EmployeeValidation\" />
+    <Folder Include="Validations\UserValidation\" />
+    <Folder Include="Validations\StudentPaymentValidation\" />
+    <Folder Include="Validations\InformationValidation\" />
+    <Folder Include="Validations\InternshipValidation\" />
+    <Folder Include="Validations\SatisfactionValidation\" />
+    <Folder Include="Validations\RoleValidation\" />
+    <Folder Include="Validations\MeetinValidation\" />
+    <Folder Include="Validations\GroupValidation\" />
+    <Folder Include="Validations\PositionValidation\" />
+    <Folder Include="Validations\RegisterValidation\" />
+  </ItemGroup>
+
+</Project>
