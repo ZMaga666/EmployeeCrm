@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using EmployeeCrm.Application.AutoMapper;
+using EmployeeCrm.Application.DTOs;
 using EmployeeCrm.Application.DTOs.EventDTos;
 using EmployeeCrm.Application.Validations.EventValidation;
 using EmployeeCrm.Domain.Entities;
@@ -25,6 +26,9 @@ namespace EmployeeCrm.Application.DependecyResolver
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
 
-        } 
+            services.AddScoped<IValidator<EventCreateDTO>, RegisterEventValidation>();
+        }
     }
+
+        
 }

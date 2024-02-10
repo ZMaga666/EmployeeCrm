@@ -11,7 +11,6 @@ namespace EmployeeCrm.Application.DTOs
         public string Title { get; set; }
         public string Location { get; set; }
         public string Organizator { get; set; }
-        public DateTime EventTime { get; set; }
 
 
 

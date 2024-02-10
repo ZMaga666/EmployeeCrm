@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace EmployeeCrm.Application.Responses.Concrete
 
 {
-    public class SuccesDataResult<T> : DataResult<T>, IDataResult<T>
+    public class SuccesDataResult<T> : DataResult<T>
     {
         public SuccesDataResult(T data,  string message) : base(data, true, message)
         {

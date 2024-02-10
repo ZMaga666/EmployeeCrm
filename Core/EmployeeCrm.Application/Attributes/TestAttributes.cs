@@ -6,7 +6,11 @@ using System.Threading.Tasks;
  
 namespace EmployeeCrm.Application.Attributes
 {
-    public class TestAttributes:Attribute
-    {  
+    public class Test:Attribute
+    {
+        public Test(string test)
+        {
+
+        }
     }
 }

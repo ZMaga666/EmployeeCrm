@@ -58,7 +58,7 @@ namespace EmployeeCrm.Persistence.Context
 
             foreach (var data in datas)
             {
-                _ = data.State switch
+              _  = data.State switch
                 {
                     EntityState.Added => data.Entity.CreatedDate = DateTime.UtcNow,
                     _ => DateTime.UtcNow

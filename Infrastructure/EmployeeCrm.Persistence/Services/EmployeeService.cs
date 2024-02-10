@@ -57,7 +57,7 @@ namespace EmployeeCrm.Application.Abstraction
             }
             await _employeeWriteRepository.AddAsync(newEmplyoee);
             var res = await _employeeWriteRepository.SaveAsync();
-            return new SuccessResult(true, "Elave olundu");
+            return new SuccessResult( "Elave olundu");
         }
     }
 }

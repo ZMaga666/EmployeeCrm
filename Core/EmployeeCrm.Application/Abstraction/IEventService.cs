@@ -13,13 +13,13 @@ namespace EmployeeCrm.Application.Abstraction
 {
     public interface IEventService
     {
-        Task<IResult>  CreateEvent(EventCreateDTO eventCreate);
-        List<EventDTO> GetEvents();
-      //  Task<IResult> UpdateEvents(EventUpdateDTO eventUpdate);
-      //  Task<IResult> DeleteEvents();
-       // Task<IResult> DeleteAllEvents();
+        Task<IResult> CreateEvent(EventCreateDTO eventCreateDTO);
+        public IDataResult<List<EventDTO>> GetEvents();
+        public IDataResult<EventDTO> GetEventById(int id);
+        Task<IResult> UpdateEvent(int id, EventUpdateDTO eventUpdateDTO);
+        Task<IResult> DeleteEvent(int id);
 
-        
-        
+
+
     }
 }
